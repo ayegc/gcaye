@@ -12,7 +12,7 @@
     <body style="background-color: rgb(206, 226, 202)"></body>
 
     <nav>
-        <button class="nav-boton" onclick="go()">Menú</button>
+        <button class="nav-boton" id="menuboton" onclick="go()">Menú</button>
         <a href="#" class="cv desaparece">Información personal</a>
         <a href="#" class="cv desaparece">Experiencia</a>
         <a href="#" class="cv desaparece">Habilidades</a>
@@ -53,16 +53,12 @@
     <script>
         function go(){
             console.log("funciona el boton");
-            var go = document.getElementsByClassName("go");
-            for (var i = 0; i < go.leght; i++){
-                go[i].classList.toggle("desaparece");
+            var titulos = document.getElementsByClassName("cv");
+            for (var i = 0; i < titulos.leght; i++){
+                titulos[i].classList.toggle("desaparece");
             }
         }
     </script>
-    
-    
-
-
 </body>
 
 </html>
