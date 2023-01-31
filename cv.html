@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/cvestilos.css" />
+</head>
+<body>
+    <body style="background-color: rgb(206, 226, 202)"></body>
+
+    <nav>
+        <button class="nav-boton" onclick="go()">Menú</button>
+        <a href="#" class="cv desaparece">Información personal</a>
+        <a href="#" class="cv desaparece">Experiencia</a>
+        <a href="#" class="cv desaparece">Habilidades</a>
+    </nav>
+
+    <hr>
+
+    <h1 id="nombre"> Soham Watts </h1>
+    
+    <img src="https://randomuser.me/api/portraits/women/18.jpg" id="large_img" class=" come_in come_in come_in come_in"/>
+
+    <h2>Informacion personal</h2>
+
+        <div>Fecha de nacimiento: 01/07/1991
+            <p>Residencia: Mar del Plata</p>
+            <p>Contacto:</p>
+            <p>Celular: (349) 201-3808</p>
+            <p>Email: felix.peters@example.com</p>
+        </div>
+    
+    <h3>Experiencia</h3>
+    
+        <Ul>
+            <li>Manejo de sistema de gestión contable Holistor.</li>
+            <li>Liquidación de sueldos.</li>
+            <li>Liquidación de impuestos Nacionales, Provinciales y Municipales.</li>
+            <li>Conciliaciones bancarias.</li>
+            <li>Confección de papeles de trabajo y confección de balances.</li>
+        </Ul>
+  
+        
+    <h4>Habilidades</h4>
+
+        <span>Soy una persona analítica, resolutiva, responsable y estoy en búsqueda de nuevos aprendizajes. Además, tengo gran orientación hacia las personas y un fuerte compromiso con el trabajo.
+        
+        <p>Busco incorporarme a un equipo de trabajo en el área contable que me permita acrecentar y superar mis habilidades profesionales y personales en el que mis conocimientos faciliten el alcance de los objetivos que desea la empresa.</p> </span>
+
+    <script>
+        function go(){
+            console.log("funciona el boton");
+            var go = document.getElementsByClassName("go");
+            for (var i = 0; i < go.leght; i++){
+                go[i].classList.toggle("desaparece");
+            }
+        }
+    </script>
+    
+    
+
+
+</body>
+
+</html>

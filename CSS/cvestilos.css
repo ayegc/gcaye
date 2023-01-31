@@ -1,0 +1,70 @@
+body {
+   font-family: 'Unbounded', cursive;
+}
+#nombre {
+    color:darkslategray;
+    width: 100;
+    font-weight: bold;
+    padding: 10px;
+    background-color:darkseagreen;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ img {width: 200px;}
+
+ h2, h3, h4 {
+   width: 100;
+   padding: 10px;
+   background-color:darkseagreen;
+   font-weight: bolder;
+   font-size: larger;
+   color:rgb(28, 59, 59);
+   }
+
+ div, span, li {
+   color:rgb(28, 59, 59);
+   width: 100;
+}
+
+.cv{
+   background-color:darksalmon;;
+   font-weight: bold;
+   padding: 10px 25px;
+   color:darkslategray;
+   display: inline-block;
+   text-decoration: none;
+   border: 2px solid darkslategray;
+}
+
+.cv:hover{
+   background-color:lightgray;
+}
+
+nav {
+   background-color: rgb(36, 138, 104);
+   padding: 25px;
+   display: flex;
+   justify-content: space-around;  
+}
+.nav-boton{
+   background-color:darksalmon;
+   padding: 10px 30px;
+   margin: 10px;
+   color:darkslategray;
+   border: 2px solid darkslategray;
+   display: none;
+}
+
+@media (max-width: 600px){
+   nav{
+      flex-direction: column;
+   }
+   .cv {margin: 10px;}
+   .nav-boton{
+      display: inline-block;
+   }
+   .desaparece{
+      display:none
+   }
+}
+
